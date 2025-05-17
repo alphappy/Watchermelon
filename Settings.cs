@@ -12,6 +12,7 @@ namespace alphappy.Watchermelon
         internal static Configurable<bool> running = instance.config.Bind("running", false);
         internal static Configurable<int> seedsPerSecond = instance.config.Bind("seedsPerSecond", 100, new ConfigAcceptableRange<int>(0, 3000));
         internal static int? Seed => doOverride.Value ? seed.Value : null;
+        internal static string SeedText => Seed?.ToString() ?? "off";
 
         internal OpLabelLong outputLabel;
         internal OpLabelLong routeLabel;
@@ -74,6 +75,11 @@ namespace alphappy.Watchermelon
                 routeLabel.text = Search.Error ?? "Current route:\n" + string.Join("", Search.Steps.Select(x => $"\n > {x}"));
                 Search.stepsDirty = false;
             }
+        }
+
+        public override string ValidationString()
+        {
+            return $"{ValidationString_ID()} {SeedText}";
         }
     }
 }
