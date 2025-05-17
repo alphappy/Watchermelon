@@ -1,0 +1,11 @@
+﻿{
+	"id": "alphappy.watchermelon",
+	"name": "Debug - Watchermelon",
+	"version": "0.2.0.0",
+	"target_game_version": "v1.10.4",
+	"authors": "alphappy",
+	"description": "Watchermelon searches for seeds that provide dynamic warps which fit a particular route for speedrunning.  It is currently limited to only Spinning Top endings.  It also provides a way to *actually* set the Watcher campaign seed.",
+	"requirements": ["watcher"],
+	"requirements_names": ["The Watcher"],
+	"tags": []
+}
