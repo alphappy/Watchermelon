@@ -13,7 +13,7 @@ namespace alphappy.Watchermelon
     {
         public const string PLUGIN_GUID = "alphappy.watchermelon";
         public const string PLUGIN_NAME = "Watchermelon";
-        public const string PLUGIN_VERSION = "0.1.0.1";
+        public const string PLUGIN_VERSION = "0.2.1";
         public static string ROUTE_FOLDER_PATH = Application.persistentDataPath.Replace('/', '\\') + "\\ModConfigs\\Watchermelon";
         public static string ROUTE_FILE_PATH = ROUTE_FOLDER_PATH + "\\route.txt";
 
